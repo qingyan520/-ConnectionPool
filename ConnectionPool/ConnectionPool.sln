@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConnectionPool", "ConnectionPool.vcxproj", "{7898A27C-59A1-41A2-AFF7-4BA600272691}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7898A27C-59A1-41A2-AFF7-4BA600272691}.Debug|x64.ActiveCfg = Debug|x64
+		{7898A27C-59A1-41A2-AFF7-4BA600272691}.Debug|x64.Build.0 = Debug|x64
+		{7898A27C-59A1-41A2-AFF7-4BA600272691}.Debug|x86.ActiveCfg = Debug|Win32
+		{7898A27C-59A1-41A2-AFF7-4BA600272691}.Debug|x86.Build.0 = Debug|Win32
+		{7898A27C-59A1-41A2-AFF7-4BA600272691}.Release|x64.ActiveCfg = Release|x64
+		{7898A27C-59A1-41A2-AFF7-4BA600272691}.Release|x64.Build.0 = Release|x64
+		{7898A27C-59A1-41A2-AFF7-4BA600272691}.Release|x86.ActiveCfg = Release|Win32
+		{7898A27C-59A1-41A2-AFF7-4BA600272691}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1269845D-9C21-433F-B81E-72119E3B3604}
+	EndGlobalSection
+EndGlobal

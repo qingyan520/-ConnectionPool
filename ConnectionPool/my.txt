@@ -1,0 +1,9 @@
+ip=1
+user=1
+password=1
+dbname=1
+port=1
+initSize=1
+maxSize=1
+maxIdleTime=1
+connectionTimeOut=1
