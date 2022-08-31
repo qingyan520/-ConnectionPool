@@ -7,9 +7,12 @@
 #include<mutex>
 #include<thread>
 #include<condition_variable>
+#include<functional>
+#include<memory>
 #include<mysql.h>
 #include<time.h>
 #include<chrono>
+
 using namespace std;
 
 
@@ -26,7 +29,9 @@ static void log(string level, string message, string file_name, int line) {
 	   struct tm* ttime;
 	   ttime = localtime(&tt);
 	   strftime(now, 1024, "%Y-%m-%d %H:%M:%S", ttime);
-	   cout << "[" << now << "" << "][" << level << "]" << "[" << message << "]" << "[" << file_name << "]" << "[" << line << "]" << endl;
+	  // cout << "[" << now << "" << "][" << level << "]" << "[" << message << "]" << "[" << file_name << "]" << "[" << line << "]" << endl;
+
+	   printf("[%s][%s][%s][%s][%d]\n", now, level.c_str(), message.c_str(), file_name.c_str(), line);
 
 }
 

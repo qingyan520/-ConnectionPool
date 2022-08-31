@@ -13,6 +13,7 @@ public:
 	ConnectionPool(const Connection& con) = delete;
 	ConnectionPool& operator=(const ConnectionPool& con) = delete;
 
+	shared_ptr <Connection>GetConnection();
 private:
 
 	//构造函数私有化，设置单例模式
@@ -21,6 +22,11 @@ private:
 	bool LoadConfigFile();//加载配置文件
 
 	void CreateConfigFile();//如果没有写配置文件，或者配置文件有问题就手动输入数据，然后重新创建一个配置文件方便下次使用
+
+	void Producer();        //生产者线程
+
+	void ScansConnection(); //监控线程，监控连接空闲时间是否过长
+
 
 	string ip;               //要访问数据库的ip地址
 	string user;			 //访问数据库的用户
@@ -36,4 +42,7 @@ private:
 	queue<Connection*>_que;     //存储每一个连接
 	mutex _mtx;                 //互斥锁
 	condition_variable  _cv;    //条件变量
+	atomic_int _count=0;          //统计队列中的元素
+
 };
+
